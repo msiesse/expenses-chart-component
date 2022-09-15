@@ -22,11 +22,12 @@ body {
   display: flex;
   background-color: #ec775f;
   justify-content: space-between;
+  align-items: center;
   color: #fff;
   max-width: 400px;
   width: 90vw;
   border-radius: 10px;
-  padding-right: 1em;
+  padding: 1.5em 1.25em 1.5em 1.25em;
 }
 .current-balance-box img {
   max-width: 100%;
@@ -34,11 +35,11 @@ body {
 .current-balance {
   display: flex;
   flex-direction: column;
-  padding: 1.5em 0 0.25em 1.5em;
 }
 .current-balance h1 {
   font-size: 30px;
   margin-top: 0.25em;
+  margin-bottom: 0;
 }
 .current-balance span {
   font-size: 18px;
