@@ -9,19 +9,39 @@
     margin-top 0
 
 .diagram
-  width: 100%
+  width 100%
   display grid
-  grid-auto-flow: column;
-  grid-auto-columns: 1fr;
-  align-items: end;
-  gap: 10px
+  grid-template-columns: repeat(7, 1fr);
+  align-items end
+  gap 10px
 
 .weekdays
-  font-size: 12px
-  text-align: center
-  color: medium-brown
+  font-size 12px
+  color medium-brown
+  text-align center
+  max-width: 30px
 
 .stick
-  height: 7em
-  background-color: soft-red
-  border-radius: 5px
+  display flex
+  flex-direction column
+  align-items center
+
+.stick-icon
+  background-color soft-red
+  border-radius 5px
+  width: 35px
+  margin-top: 0.5em
+
+.stick-icon:hover
+  background-color light-soft-red
+
+.stick-icon:focus
+  background-color cyan
+
+.info-stick
+  background-color dark-brown
+  color: white
+  text-align center
+  font-size: 10px
+  padding: 0.4em
+  border-radius 10px

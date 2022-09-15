@@ -10,6 +10,7 @@ body {
   justify-content: center;
   background-color: #f8e9dd;
   font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
 }
 .attribution {
   font-size: 11px;
@@ -59,18 +60,38 @@ body {
 .diagram {
   width: 100%;
   display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: 1fr;
+  grid-template-columns: repeat(7, 1fr);
   align-items: end;
   gap: 10px;
 }
 .weekdays {
   font-size: 12px;
-  text-align: center;
   color: #93867b;
+  text-align: center;
+  max-width: 30px;
 }
 .stick {
-  height: 7em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.stick-icon {
   background-color: #fc6c56;
   border-radius: 5px;
+  width: 35px;
+  margin-top: 0.5em;
+}
+.stick-icon:hover {
+  background-color: rgba(252,108,86,0.62);
+}
+.stick-icon:focus {
+  background-color: #76b5bc;
+}
+.info-stick {
+  background-color: #382314;
+  color: #fff;
+  text-align: center;
+  font-size: 10px;
+  padding: 0.4em;
+  border-radius: 10px;
 }

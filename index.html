@@ -1,61 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  
-  <title>Frontend Mentor | Expenses chart component</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <title>Frontend Mentor | Expenses chart component</title>
 
 </head>
 <body>
-  <main>
+<main>
     <section class="balance box">
-      <div class="current-balance">
-        <span>My balance</span>
-        <h1>$921.48</h1>
-      </div>
-      <img src="./images/logo.svg" alt="logo">
+        <div class="current-balance">
+            <span>My balance</span>
+            <h1>$921.48</h1>
+        </div>
+        <img src="./images/logo.svg" alt="logo">
     </section>
 
     <section class="week-review box">
-      <h1>Spending - Last 7 days</h1>
-      <div class="diagram sticks">
-        <div class="stick mon"></div>
-        <div class="stick tue"></div>
-        <div class="stick wed"></div>
-        <div class="stick thu"></div>
-        <div class="stick fri"></div>
-        <div class="stick sat"></div>
-        <div class="stick sun"></div>
-      </div>
-      <div class="diagram weekdays">
-        <p>mon</p>
-        <p>tue</p>
-        <p>wed</p>
-        <p>thu</p>
-        <p>fri</p>
-        <p>sat</p>
-        <p>sun</p>
-      </div>
+        <h1>Spending - Last 7 days</h1>
+        <div class="diagram">
+            <div class="stick mon">
+                <span id="info-stick-mon" class="info-stick">$15.36</span>
+                <div tabindex="0" id="stick-icon-mon" class="stick-icon"></div>
+                <p class="weekdays">mon</p>
+            </div>
+            <div class="stick tue">
+                <span id="info-stick-tue" class="info-stick"></span>
+                <div tabindex="0" id="stick-icon-tue" class="stick-icon"></div>
+                <p class="weekdays">tue</p>
+            </div>
+            <div class="stick wed">
+                <span id="info-stick-wed" class="info-stick"></span>
+                <div tabindex="0" id="stick-icon-wed" class="stick-icon"></div>
+                <p class="weekdays">wed</p>
+            </div>
+            <div class="stick thu">
+                <span id="info-stick-thu" class="info-stick"></span>
+                <div tabindex="0" id="stick-icon-thu" class="stick-icon"></div>
+                <p class="weekdays">thu</p>
+            </div>
+            <div class="stick fri">
+                <span id="info-stick-fri" class="info-stick"></span>
+                <div tabindex="0" id="stick-icon-fri" class="stick-icon"></div>
+                <p class="weekdays">fri</p>
+            </div>
+            <div class="stick sat">
+                <span id="info-stick-sat" class="info-stick"></span>
+                <div tabindex="0" id="stick-icon-sat" class="stick-icon"></div>
+                <p class="weekdays">sat</p>
+            </div>
+            <div class="stick sun">
+                <span id="info-stick-sun" class="info-stick"></span>
+                <div tabindex="0" id="stick-icon-sun" class="stick-icon"></div>
+                <p class="weekdays">sun</p>
+            </div>
+        </div>
     </section>
 
-<!--    Total this month-->
-<!--    $478.33-->
+    <!--    Total this month-->
+    <!--    $478.33-->
 
-<!--    +2.4%-->
-<!--    from last month-->
+    <!--    +2.4%-->
+    <!--    from last month-->
 
-  <script src="scripts/main.js"></script>
-  </main>
+    <script src="scripts/main.js"></script>
+</main>
 
-  <footer>
+<footer>
     <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Your Name Here</a>.
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">Your Name Here</a>.
     </div>
-  </footer>
+</footer>
 </body>
 </html>
