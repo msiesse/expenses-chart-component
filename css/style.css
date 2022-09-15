@@ -18,18 +18,21 @@ body {
 .attribution a {
   color: #3e52a3;
 }
-.current-balance-box {
+.box {
   display: flex;
-  background-color: #fc6c56;
   justify-content: space-between;
   align-items: center;
-  color: #fff;
   max-width: 500px;
   width: 90vw;
   border-radius: 10px;
   padding: 1.5em 1.75em 1.5em 1.25em;
+  margin-bottom: 0.75em;
 }
-.current-balance-box img {
+.balance {
+  background-color: #fc6c56;
+  color: #fff;
+}
+.balance img {
   max-width: 22%;
 }
 .current-balance {
@@ -43,4 +46,31 @@ body {
 }
 .current-balance span {
   font-size: 15px;
+}
+.week-review {
+  background-color: #fff;
+  flex-direction: column;
+  align-items: start;
+}
+.week-review h1 {
+  font-size: 24px;
+  margin-top: 0;
+}
+.diagram {
+  width: 100%;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  align-items: end;
+  gap: 10px;
+}
+.weekdays {
+  font-size: 12px;
+  text-align: center;
+  color: #93867b;
+}
+.stick {
+  height: 7em;
+  background-color: #fc6c56;
+  border-radius: 5px;
 }
