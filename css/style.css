@@ -23,7 +23,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 500px;
+  max-width: 420px;
+  min-width: 340px;
   width: 90vw;
   border-radius: 10px;
   padding: 1.5em 1.75em 1.5em 1.25em;
@@ -60,9 +61,8 @@ body {
 .diagram {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: repeat(15, 1fr);
   align-items: end;
-  gap: 10px;
 }
 .weekdays {
   font-size: 12px;
@@ -74,12 +74,48 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  grid-row-start: 1;
+}
+.stick.mon {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+.stick.tue {
+  grid-column-start: 3;
+  grid-column-end: 6;
+}
+.stick.wed {
+  grid-column-start: 5;
+  grid-column-end: 8;
+}
+.stick.thu {
+  grid-column-start: 7;
+  grid-column-end: 10;
+}
+.stick.fri {
+  grid-column-start: 9;
+  grid-column-end: 12;
+}
+.stick.sat {
+  grid-column-start: 11;
+  grid-column-end: 14;
+}
+.stick.sun {
+  grid-column-start: 13;
+  grid-column-end: 16;
 }
 .stick-icon {
   background-color: #fc6c56;
   border-radius: 5px;
-  width: 35px;
+  width: 38px;
+  min-width: 32px;
   margin-top: 0.5em;
+  z-index: 1;
+}
+@media screen and (max-width: 425px) {
+  .stick-icon {
+    width: 32px;
+  }
 }
 .stick-icon:hover {
   background-color: rgba(252,108,86,0.62);
@@ -88,10 +124,18 @@ body {
   background-color: #76b5bc;
 }
 .info-stick {
-  background-color: #382314;
+  background-color: #fff;
   color: #fff;
   text-align: center;
-  font-size: 10px;
-  padding: 0.4em;
-  border-radius: 10px;
+  font-size: 12px;
+  padding: 0.55em;
+  border-radius: 5px;
+  z-index: 0;
+}
+@media screen and (max-width: 425px) {
+  .info-stick {
+    font-size: 11px;
+    padding: 0.4em;
+    border-radius: 10px;
+  }
 }
