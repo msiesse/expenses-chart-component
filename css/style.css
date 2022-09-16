@@ -12,6 +12,22 @@ body {
   font-family: 'DM Sans', sans-serif;
   font-size: 16px;
 }
+h1,
+h4 {
+  margin-bottom: 0;
+  color: #382314;
+}
+p {
+  margin-bottom: 0;
+  margin-top: 0;
+  color: #93867b;
+}
+hr.solid {
+  width: 100%;
+  border: 0;
+  border-top: 1px solid rgba(147,134,123,0.15);
+  margin: 1.5em 0 1.5em 0;
+}
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -44,24 +60,25 @@ body {
 .current-balance h1 {
   font-size: 25px;
   margin-top: 0.25em;
-  margin-bottom: 0;
+  color: #fff;
 }
 .current-balance span {
   font-size: 15px;
 }
-.week-review {
+.review {
   background-color: #fff;
   flex-direction: column;
   align-items: start;
 }
-.week-review h1 {
+.review h1 {
   font-size: 24px;
   margin-top: 0;
+  margin-bottom: 0.5em;
 }
 .diagram {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(15, 1fr);
+  grid-template-columns: repeat(7, 1fr);
   align-items: end;
 }
 .weekdays {
@@ -74,35 +91,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  grid-row-start: 1;
-}
-.stick.mon {
-  grid-column-start: 1;
-  grid-column-end: 4;
-}
-.stick.tue {
-  grid-column-start: 3;
-  grid-column-end: 6;
-}
-.stick.wed {
-  grid-column-start: 5;
-  grid-column-end: 8;
-}
-.stick.thu {
-  grid-column-start: 7;
-  grid-column-end: 10;
-}
-.stick.fri {
-  grid-column-start: 9;
-  grid-column-end: 12;
-}
-.stick.sat {
-  grid-column-start: 11;
-  grid-column-end: 14;
-}
-.stick.sun {
-  grid-column-start: 13;
-  grid-column-end: 16;
 }
 .stick-icon {
   background-color: #fc6c56;
@@ -110,9 +98,10 @@ body {
   width: 38px;
   min-width: 32px;
   margin-top: 0.5em;
+  margin-bottom: 0.5em;
   z-index: 1;
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 460px) {
   .stick-icon {
     width: 32px;
   }
@@ -127,15 +116,33 @@ body {
   background-color: #fff;
   color: #fff;
   text-align: center;
-  font-size: 12px;
+  font-size: 13px;
   padding: 0.55em;
   border-radius: 5px;
   z-index: 0;
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 460px) {
   .info-stick {
     font-size: 11px;
     padding: 0.4em;
     border-radius: 10px;
   }
+}
+.month-review {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.month-review-total h1 {
+  font-size: 32px;
+  margin-bottom: 0;
+}
+.month-review-total p {
+  color: #93867b;
+  margin-bottom: 0.25em;
+}
+.last-month-compare {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
 }

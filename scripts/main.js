@@ -30,7 +30,7 @@ const data = [
 ]
 
 const changeHeightOfStick = (stickIcon, amount, maxAmount) => {
-    if (window.screen.availWidth <= 425)
+    if (window.screen.availWidth <= 460)
         stickIcon.style.height = `${(amount / maxAmount) * 8}em`
     else
         stickIcon.style.height = `${(amount / maxAmount) * 7}em`
